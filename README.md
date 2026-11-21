@@ -1,12 +1,12 @@
 # NetivoVPN — Secure VPN Infrastructure
 
-> **Portfolio status:** historical project documented; deployment and testing are **not independently verified** as of 2026-11-21. This repository contains original documentation, sanitized example configurations, and a validation procedure—not a claim of a functioning production VPN.
+I configured a WireGuard profile on my iPhone for NetivoVPN and documented the cloud environment in Hetzner. The project dashboard shows one server, one firewall and one network. On the phone, WireGuard shows the profile active on demand with default routes for IPv4 and IPv6.
 
-## Overview
+[View the original lab captures and findings](evidence/README.md)
 
-NetivoVPN is a self-hosted VPN infrastructure project focused on secure remote access, Linux server hardening, and WireGuard tunneling. It was originally explored using rented DigitalOcean VPS infrastructure. The current portfolio presentation uses an **original WireGuard/Linux implementation** rather than redistributing any third-party Android template.
+![NetivoVPN active on the iPhone](evidence/active-profile.png)
 
-**Skills demonstrated through this documentation:** VPN architecture, key management concepts, network segmentation, NAT, firewall planning, operational verification, threat modeling, and honest evidence handling.
+The client recorded 296 bytes sent. A peer handshake, return traffic, public egress and DNS behavior remain open validation items. The configuration and architecture below are reconstruction examples.
 
 ## Architecture (proposed / reconstruction reference)
 
@@ -24,9 +24,10 @@ No proprietary BYCOM/BICOM source, actual secrets, real peer configs, public ser
 
 | Item | Historical account | Currently verified by original artifacts? |
 |---|---|---|
+| Hetzner Cloud | Project dashboard | Server, firewall and network visible |
 | DigitalOcean VPS rented for project | User described using DigitalOcean infrastructure | No |
-| WireGuard tunnel | Earlier discussion referenced handshake / transfer screenshots | No source screenshots currently available |
-| Tunnel addresses and client | Earlier discussion referred to a client tunnel | No original config currently available |
+| WireGuard tunnel | Earlier discussion referenced handshake / transfer screenshots | iOS profile active and sent counter visible. Handshake unverified |
+| Tunnel addresses and client | Earlier discussion referred to a client tunnel | Client configuration visible in original screenshots |
 | Android application | BYCOM VPN 2.5 template was acquired, but later decision was to avoid that third-party template | No original app build or source verified |
 | DNS leak protection / kill switch | Planned capability | Not tested |
 | Zero-log guarantee | Discussed as a goal | Not audited; **not claimed** |
