@@ -1,5 +1,9 @@
 # Historical record and evidence provenance
 
+## May 2025 Android prototype
+
+[Four original project photos](../evidence/README.md#android-prototype-in-android-studio) document project selection on May 10, the project tree and a runtime crash on May 11, and a successful Gradle task in a separate undated photo. An Android VPN session remains unverified.
+
 ## Past project discussions (not attached original artifacts)
 
 - October–November 2025: NetivoVPN concept, DigitalOcean VPS, Linux hardening, WireGuard and Android VPN interface.
@@ -20,4 +24,5 @@ Only test results backed by a sanitized screenshot, timestamped terminal output,
 - [ ] Firewall and SSH hardening outputs (redacted)
 - [ ] DNS leak and IPv6 route tests
 - [ ] Reconnection and kill-switch behavior per platform
-- [ ] Original Android client build/screenshots, only if source license allows publication
+- [x] Android Studio and runtime screenshots
+- [ ] Android APK provenance, crash diagnosis and successful retest
