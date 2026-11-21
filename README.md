@@ -1,6 +1,10 @@
-# NetivoVPN — Secure VPN Infrastructure
+# NetivoVPN (2025) — WireGuard VPN on iOS
 
-I configured a WireGuard profile on my iPhone for NetivoVPN and documented the cloud environment in Hetzner. The project dashboard shows one server, one firewall and one network. On the phone, WireGuard shows the profile active on demand with default routes for IPv4 and IPv6.
+In 2025 I used NetivoVPN on my iPhone through the WireGuard app. I installed WireGuard, created a tunnel named NetivoVPN and configured the server as its peer. The profile specified the server endpoint and peer public key, the client's tunnel addresses, DNS resolvers and allowed routes. Activating that profile gave me an encrypted VPN connection on iOS.
+
+The same client setup applies to a MacBook running macOS. The [client screenshots](evidence/README.md#mobile-client) document the iPhone session. The MacBook photos show Android Studio, where I worked on a separate Android prototype.
+
+The Hetzner dashboard shows one server, one firewall and one network. The iPhone screenshots show on-demand activation and default routes for IPv4 and IPv6.
 
 [View the original lab captures and findings](evidence/README.md)
 
@@ -26,7 +30,7 @@ No proprietary BYCOM/BICOM source, actual secrets, real peer configs, public ser
 |---|---|---|
 | Hetzner Cloud | Project dashboard | Server, firewall and network visible |
 | DigitalOcean VPS rented for project | User described using DigitalOcean infrastructure | No |
-| WireGuard tunnel | Earlier discussion referenced handshake / transfer screenshots | iOS profile active and sent counter visible. Handshake unverified |
+| WireGuard tunnel | I used the configured WireGuard tunnel on iOS in 2025 | iOS profile active and sent counter visible. Handshake unverified |
 | Tunnel addresses and client | Earlier discussion referred to a client tunnel | Client configuration visible in original screenshots |
 | Android application | BYCOM VPN 2.5 template was acquired, but later decision was to avoid that third-party template | [Android Studio project, successful Gradle task and runtime crash documented](evidence/README.md#android-prototype-in-android-studio). APK and source provenance unverified |
 | DNS leak protection / kill switch | Planned capability | Not tested |
@@ -60,4 +64,4 @@ This is a **reconstruction/documentation repository**, not a certified no-logs s
 
 ## Owner
 
-NetivoVPN project — portfolio documentation, 2026. The original Android application/template is **not** distributed here.
+NetivoVPN project, 2025. Portfolio documentation published in 2026. The original Android application/template is **not** distributed here.
