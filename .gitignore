@@ -1,0 +1,15 @@
+# Secrets and real WireGuard profiles
+*.conf
+!configs/*.example.conf
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+.env
+.env.*
+!.env.example
+*private*key*
+*secret*
+.DS_Store
+__pycache__/
