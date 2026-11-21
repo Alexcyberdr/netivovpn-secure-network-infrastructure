@@ -64,4 +64,8 @@ This is a **reconstruction/documentation repository**, not a certified no-logs s
 
 ## Owner
 
+**Alejandro Báez Santana** created NetivoVPN in 2025. He developed the original idea, designed and deployed the VPN infrastructure on Hetzner Cloud, and configured the encrypted tunnel on iOS using the WireGuard app.
+
+[GitHub profile](https://github.com/Alexcyberdr)
+
 NetivoVPN project, 2025. Portfolio documentation published in 2026. The original Android application/template is **not** distributed here.
