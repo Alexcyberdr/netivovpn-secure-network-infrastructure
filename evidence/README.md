@@ -43,3 +43,23 @@ One WireGuard profile view shows both an IPv4 and an IPv6 interface address and 
 A separate VPN interface displayed 302.2 MB downloaded and 187.1 MB uploaded. Its visible screen does not identify NetivoVPN or its WireGuard peer. These counters are excluded from the project's verified transfer results.
 
 ![Traffic totals from the unidentified VPN interface](unattributed-counters.png)
+
+## Android prototype in Android Studio
+
+The dated photos place the Android prototype work on May 10–11, 2025. The separate Build Output photo has no visible date.
+
+1. **Selecting the project on macOS, May 10.** The Android Studio file dialog shows the selected folder, `NetivoVPN-Proyecto-Base`. Its contents include the app module and Gradle configuration files. This is the starting point for opening the Android project.
+
+   ![NetivoVPN project selected in the Android Studio file dialog](android-open.jpg)
+
+2. **Inspecting the Android project, May 11.** The IDE displays the app module, Gradle wrapper and build settings. In the separate build photo, the app tree expands to the Java and resource folders, the manifest and the main activity layout. The layout editor displays a vertical LinearLayout containing a TextView.
+
+   ![Android project tree with the app module and Gradle wrapper](android-project.jpg)
+
+3. **Reading the Gradle result.** Build Output reports `BUILD SUCCESSFUL in 640ms` and one executed task. The Build menu highlights Clean Project. The output omits the executed task name, so the exact operation and APK generation remain unconfirmed. Gradle also reports deprecated features that would affect compatibility with Gradle 9.0.
+
+   ![Android Studio layout editor, Build menu and Gradle task output](android-build.jpg)
+
+4. **Observing the runtime failure, May 11.** Android reports “NetivoVPN keeps stopping.” This records what happened when the app ran. A Logcat exception trace would identify where to investigate. The available photos leave the cause, any later fix and an Android VPN connection unverified.
+
+   ![Android reporting repeated stops for NetivoVPN](android-runtime.jpg)
