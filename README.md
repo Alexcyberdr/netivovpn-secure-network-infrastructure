@@ -28,7 +28,7 @@ No proprietary BYCOM/BICOM source, actual secrets, real peer configs, public ser
 | DigitalOcean VPS rented for project | User described using DigitalOcean infrastructure | No |
 | WireGuard tunnel | Earlier discussion referenced handshake / transfer screenshots | iOS profile active and sent counter visible. Handshake unverified |
 | Tunnel addresses and client | Earlier discussion referred to a client tunnel | Client configuration visible in original screenshots |
-| Android application | BYCOM VPN 2.5 template was acquired, but later decision was to avoid that third-party template | No original app build or source verified |
+| Android application | BYCOM VPN 2.5 template was acquired, but later decision was to avoid that third-party template | [Android Studio project, successful Gradle task and runtime crash documented](evidence/README.md#android-prototype-in-android-studio). APK and source provenance unverified |
 | DNS leak protection / kill switch | Planned capability | Not tested |
 | Zero-log guarantee | Discussed as a goal | Not audited; **not claimed** |
 | Multi-region, billing, production service | Product ideas | Not verified |
